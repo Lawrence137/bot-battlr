@@ -1,11 +1,13 @@
-import BotCollection from "./BotCollection";
-import YourBotArmy from "./YourBotArmy";
+import React from "react";
+import BotsPage from "./BotsPage";
+
+
 
 function App() {
+
   return (
     <div className="App">
-      <BotCollection />
-     
+      <BotsPage />
     </div>
   );
 }
