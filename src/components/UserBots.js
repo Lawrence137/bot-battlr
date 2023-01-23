@@ -32,7 +32,7 @@ function UserBots({ bot, userBots, setUserBots, index}) {
   function DischargeBot(id=`${bot.id}`){
       console.log(id);
       axios
-      .delete(`http://localhost:8002/bots/${id}`)
+      .delete(`https://api.jsonbin.io/v3/b/63ce47e6ebd26539d065ab8d${id}`)
       .then(alert("bot deleted"))        
   }
 

@@ -6,7 +6,7 @@ import BotCollection from "./BotCollection";
 // create an axios instance to minimize use of baseURL
 const client = axios.create(
   {
-    baseURL : "http://localhost:8002/bots"
+    baseURL : "https://api.jsonbin.io/v3/b/63ce47e6ebd26539d065ab8d"
   }
 )
 
@@ -21,7 +21,7 @@ function BotsPage() {
     ()=>{
       client
         .get("/")
-        .then((response)=>setBots(response.data));
+        .then((response)=>setBots(response.data.record.bots));
     }, []
   )
 

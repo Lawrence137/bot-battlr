@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeartbeat, faLightning, faShieldAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHeartbeat,  faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 function BotCollection({botCollection, userBots, setUserBots}) {
