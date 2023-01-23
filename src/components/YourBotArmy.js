@@ -9,9 +9,9 @@ function YourBotArmy({myBots, userBots, setUserBots}) {
     return <UserBots key={`bot-${index}`} bot={bot} userBots={userBots} setUserBots={setUserBots}/>
   })
   return (
-    <div className="bot-army">
-      <div className="">
-        <div className="display bots">
+    <div className="bot-army" >
+      <div className="" style={{display:'flex'}}>
+        <div className="display bots  bot-army-card">
           {/* render these user bots here */}
           { displayUserBotSpecs }
         </div>

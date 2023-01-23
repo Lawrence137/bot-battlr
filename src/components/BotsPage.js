@@ -16,7 +16,7 @@ function BotsPage() {
   //state variable to store user selected ots on enlisting
   const [userBots, setUserBots] = useState([]);
 
-  //sideeffect to fetch and update state using axios
+  //side effect to fetch and update state using axios
   useEffect(
     ()=>{
       client

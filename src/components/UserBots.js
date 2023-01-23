@@ -37,9 +37,9 @@ function UserBots({ bot, userBots, setUserBots, index}) {
   }
 
 return (
-  <div className="ui column">
+  <div className="">
     <div
-      className="ui card"
+      className=""
       key={`bot-${index}`}
     >
       <div className="image">
@@ -50,28 +50,28 @@ return (
             {bot.name}
             <i className={botTypeClasses[bot.bot_class]} />
           </div>
-          <div className="meta text-wrap">
+          <div className="">
             <small>{bot.catchphrase}</small>
           </div>
         </div>
         <div className="extra content">
           <span>
-            <i className="icon heartbeat" />
+            <i className="" />
             {bot.health}
           </span>
 
           <span>
-            <i className="icon lightning" />
+            <i className="" />
             {bot.damage}
           </span>
           <span>
-            <i className="icon shield" />
+            <i className="" />
             {bot.armor}
           </span>
           <span>
-            <div className="ui center aligned segment basic">
+            <div className="">
               <button
-                className="ui mini red button"
+                className=""
                 onClick={() => {DischargeBot()} }
               >
                 X

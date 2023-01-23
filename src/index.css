@@ -9,10 +9,31 @@ body {
 }
 
 .bot-army {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1em;
-  overflow-x: scroll;
+  display: flex;
+  gap: 3em;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  
+  background-color: aqua;
+
+
+}
+
+.bot-army-card{
+  background-color: brown;
+  /* flex-basis: 300px; */
+  display: flex;
+  gap: 0.5em;
+  flex-basis: 30%;
+  grid-template-columns: auto auto auto ;
+}
+
+.bot-card {
+  flex-basis: 30%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background-color: cadetblue;
+  
 }
 
 .ui.grid > .row.bot-army-row {
@@ -36,20 +57,27 @@ body {
 }
 
 
-.bot-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  border: 1px solid #ccc;
-}
-
 .bot-info {
   text-align: center;
+  
 }
 
 .bot-actions {
   margin-top: 1em;
   display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto auto ;
+  gap: 0.5em;
+  margin-top: 200px;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5em;
   justify-content: center;
 }

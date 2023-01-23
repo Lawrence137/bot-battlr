@@ -26,17 +26,17 @@ function BotSpecs({ bot, userBots, setUserBots }) {
     // console.log(userBots)    
   }
   return (
-    <div className="ui segment">
-      <div className="ui two column centered grid">
+    <div className="">
+      <div className="">
         <div className="row">
-          <div className="four wide column">
+          <div className="">
             <img
               alt="oh no!"
-              className="ui medium circular image bordered"
+              className=""
               src={bot.avatar_url}
             />
           </div>
-          <div className="four wide column">
+          <div className="">
             <h2>Name: {bot.name}</h2>
             <p>
               <strong>Catchphrase: </strong>
@@ -47,26 +47,26 @@ function BotSpecs({ bot, userBots, setUserBots }) {
               <i className={botTypeClasses[bot.bot_class]} />
             </strong>
             <br />
-            <div className="ui segment">
-              <div className="ui three column centered grid">
-                <div className="row">
-                  <div className="column">
-                    <i className="icon large circular red heartbeat" />
+            <div className="">
+              <div className="">
+                <div className="">
+                  <div className="">
+                    <i className="" />
                     <strong>{bot.health}</strong>
                   </div>
-                  <div className="column">
-                    <i className="icon large circular yellow lightning" />
+                  <div className="">
+                    <i className="" />
                     <strong>{bot.damage}</strong>
                   </div>
-                  <div className="column">
-                    <i className="icon large circular blue shield" />
+                  <div className="">
+                    <i className="" />
                     <strong>{bot.armor}</strong>
                   </div>
                 </div>
               </div>
             </div>
             <button
-              className="ui button fluid"
+              className=""
               onClick={() =>
                 console.log("connect this to a function that shows all bots")
               }
@@ -74,7 +74,7 @@ function BotSpecs({ bot, userBots, setUserBots }) {
               Go Back
             </button>
             <button
-              className="ui button fluid"
+              className=""
               onClick={() => viewDetailsOnClick() }
             >
               Enlist

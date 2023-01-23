@@ -25,8 +25,13 @@ function BotCollection({botCollection, userBots, setUserBots}) {
     return (
       <div className="bot-card" key={bot.id} onClick={() => addBotToArmy(bot)}>
         <div className="bot-info">
-          <p>ID: {bot.id}</p>
-          <p>Name: {bot.name}</p>
+          {/* <p>ID: {bot.id}</p> */}
+          <img src={bot.avatar_url} alt={bot.name}/>
+          <p> {bot.name}</p>
+          
+          {/* <p>Bot Class: {bot.bot_class}</p> */}
+          <p>{bot.catchphrase}</p>
+          <div className="icons">
           <p>
           <FontAwesomeIcon icon={faHeartbeat} />
             {bot.health}
@@ -37,11 +42,11 @@ function BotCollection({botCollection, userBots, setUserBots}) {
           <p>
           <FontAwesomeIcon icon={faShieldAlt} />
             {bot.armor}</p>
-          <p>Bot Class: {bot.bot_class}</p>
-          <p>Catchphrase: {bot.catchphrase}</p>
-          <img src={bot.avatar_url} alt={bot.name}/>
-          <p>Created at: {bot.created_at}</p>
-          <p>Updated at: {bot.updated_at}</p>
+
+          </div>
+          
+          {/* <p>Created at: {bot.created_at}</p>
+          <p>Updated at: {bot.updated_at}</p> */}
         </div>
         <div className="bot-actions">
           {userBots.find(b => b.id === bot.id) ? (
@@ -56,7 +61,7 @@ function BotCollection({botCollection, userBots, setUserBots}) {
   });
 
   return (
-    <div className="ui four column grid">
+    <div className="">
       <div className="row">
         {/* Collection of all bots */}
         {displayBotCards}
