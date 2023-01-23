@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Bot Battlr 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For this project, you’ll be building out a React application that displays a
 
-## Available Scripts
+list of your recent bank transactions, among other features.
 
-In the project directory, you can run:
+# Core Deliverables
 
-### `npm start`
+As a user, I should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- See profiles of all bots rendered in `BotCollection`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- Add an individual bot to my army by clicking on it. The selected bot should
+  render in the `YourBotArmy` component. The bot can be enlisted only **once**.
+  The bot **does not** disappear from the `BotCollection`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- Release a bot from my army by clicking on it. The bot disappears from the
+  `YourBotArmy` component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Discharge a bot from their service forever, by clicking the red button marked
+  "x", which would delete the bot both from the backend and from the
+  `YourBotArmy` on the frontend.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  # Getting Started
 
-### `npm run eject`
+  Getting started In order for you to use the content on this repo ensure you have the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nodejs 9.0+ Installation To use this repo on your machine requires some simple steps;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open a terminal / command line interface on your computer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repo by typing the following:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`git clone https://github.com/Lawrence137/bot-battlr`
 
-## Learn More
+Be patient as it creates a copy on your local machine for you.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Change directory to the repo folder by typing the following in the terminal:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`cd bot-battlr`
 
-### Code Splitting
+Open it in Visual Studio Code by typing;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`code .`
 
-### Analyzing the Bundle Size
+After it opens in Visual Studio Code, type;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`npm install`
 
-### Making a Progressive Web App
+# Running The Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To run the application you can simply click on the live link below:
 
-### Advanced Configuration
+https://chipper-panda-050474.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Alternatively, you can choose to run the application locally on your machine by following the steps below.
 
-### Deployment
+After launching the application on Visual Studio Code, go to the top on the part written Terminal and right click on it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Select new terminal and a terminal should open at the bottom of the page.
 
-### `npm run build` fails to minify
+In the terminal, type the following;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`npm start`
+
+This should open a page on your browser showing all the available bots. Click on a bot to add it to the army and click on it again to remove it from the army.
+
+Click on the X button to delete a bot permanently.
+
+# Authors
+
+This project was contributed to by;
+
+Lawrence Kimani
+
+Email: lawrencekimani18@gmail.com
+
+# License 
+
+This project is licensed under GNU General Public License v2.0
