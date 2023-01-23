@@ -27,7 +27,7 @@ function BotsPage() {
 
   return (
     <div>
-      {/* Pass the specs parent component users bots */}
+      <h3 id="header">BOT BATTLR</h3>
       <YourBotArmy myBots={userBots} userBots={userBots} setUserBots={setUserBots}/>
       <BotCollection botCollection={bots} userBots={userBots} setUserBots={setUserBots} />
     </div>

@@ -26,6 +26,7 @@ function BotCollection({botCollection, userBots, setUserBots}) {
       <div className="bot-card" key={bot.id} onClick={() => addBotToArmy(bot)}>
         <div className="bot-info">
           {/* <p>ID: {bot.id}</p> */}
+          
           <img src={bot.avatar_url} alt={bot.name}/>
           <p> {bot.name}</p>
           
@@ -50,7 +51,7 @@ function BotCollection({botCollection, userBots, setUserBots}) {
         </div>
         <div className="bot-actions">
           {userBots.find(b => b.id === bot.id) ? (
-            <button onClick={() => releaseBotFromArmy(bot)}>Release</button>
+            <span onClick={() => releaseBotFromArmy(bot)}></span>
           ) : (
             <span onClick={() => addBotToArmy(bot)}></span>
           )}
